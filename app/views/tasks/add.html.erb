@@ -1,0 +1,9 @@
+<h1>My new task</h1>
+
+<%= form_with model: @task do |form| %>
+  <%= form.label :title, "Task name:" %>
+  <%= form.text_field :title %>
+  <%= form.label :details, "Task details:" %>
+  <%= form.text_field :details %>
+  <%= form.submit "Add task" %>
+<% end %>

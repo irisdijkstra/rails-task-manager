@@ -1,0 +1,9 @@
+<h1> Edit your task </h1>
+
+<%= form_with model: @task, url: "/task/#{@task.id}", method: :patch do |form| %>
+  <%= form.label :title, "Task name:" %>
+  <%= form.text_field :title %>
+  <%= form.label :details, "Task details:" %>
+  <%= form.text_field :details %>
+  <%= form.button "Update" %>
+<% end %>
